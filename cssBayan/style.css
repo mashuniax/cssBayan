@@ -1,7 +1,6 @@
 h1 {
     font-size: 3rem;
-    display: flex; 
-    justify-content: center; 
+    padding: 0 20px;
 }
 .tab-container {
     max-width: 80%;    
@@ -21,6 +20,10 @@ h1 {
 .tab-container .tab-item img:hover {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8)
 }
+.tab-container .tab-item img:active {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8)
+}
+
 .tab-container label {    
     background-color: #7e942d;
     display: block;
