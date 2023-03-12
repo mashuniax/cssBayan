@@ -55,6 +55,7 @@ h1 {
     height: auto;
     padding: 1rem;
 }
+
 .tab-container input:checked + label {
     background-color: #303811;
 }
@@ -102,4 +103,14 @@ h1 {
     .tab-container input:checked + label + .tab-item {         
         padding: .8rem;
     }
+}
+
+@media (hover: hover) {
+    .tab-container .tab-item img:hover {
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8)
+    }
+    .tab-container label:hover {
+        background-color: #303811;
+    }
+    
 }
