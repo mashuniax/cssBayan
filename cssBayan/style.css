@@ -1,16 +1,17 @@
 h1 {
     font-size: 3rem;
-    padding: 0 20px;
+    padding: 0 1.5rem;
 }
 .tab-container {
     max-width: 80%;    
     margin: 0 auto;
 }
-.tab-container .tab-item {    
+.tab-container .tab-item {     
     margin: 0 auto;
-    height: 0;
-    box-sizing: border-box;    
-    overflow: hidden;    
+    height: 0;    
+    box-sizing: border-box;   
+    overflow: hidden;
+    transition: padding 1s;    
 }
 .tab-container .tab-item img {
     display: block;
@@ -43,11 +44,13 @@ h1 {
 .tab-container input{
     display: none;
 }
-
-.tab-container input:checked + label + .tab-item {
-    height: 100%;  
-   
-    /* display: block;  */
+.tab-container input + label + .tab-item {
+    height: 0;
+    
+}
+.tab-container input:checked + label + .tab-item {  
+    height: auto;
+    padding: 1rem;
 }
 .tab-container label:before {
     content: '\25bc';
