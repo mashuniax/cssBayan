@@ -10,7 +10,7 @@ h1 {
     margin: 0 auto;
     height: 0;
     box-sizing: border-box;    
-    overflow: hidden;     
+    overflow: hidden;    
 }
 .tab-container .tab-item img {
     display: block;
@@ -32,28 +32,29 @@ h1 {
     margin: .6rem 0;
     width: 100%;
     color: #fff;
-    font-size: 1.5rem;   
+    font-size: 1.5rem;    
+    transition: background .3s ease-out;
     z-index: 100;
     cursor: pointer;
+}
+.tab-container label:hover {
+    background-color: #303811;
 }
 .tab-container input{
     display: none;
 }
 
 .tab-container input:checked + label + .tab-item {
-    height: auto;       
-}
-
-
-.tab-container label:hover {
-    color: #000;
-}
-.tab-container input:checked + label {
-    color: #000;
+    height: 100%;  
+   
+    /* display: block;  */
 }
 .tab-container label:before {
     content: '\25bc';
     float: right;
+}
+.tab-container input:checked + label {
+    background-color: #303811;
 }
 .tab-container input:checked + label:before {
     transition: transform .5s;
